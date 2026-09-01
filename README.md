@@ -173,7 +173,7 @@ title: "Your Post Title"
 description: "A brief description of your post!"
 date: 2026-01-01
 authors:
-  - enscribe
+  - ajt
 image: ./assets/banner.png
 tags:
   - tag1
@@ -230,7 +230,7 @@ Add author information in `src/content/authors/` as Markdown files. A file named
 
 ```yml
 ---
-name: "enscribe"
+name: "ajt"
 pronouns: "he/him"
 avatar: "https://avatars.githubusercontent.com/u/71956291?v=4"
 bio: "d(-_-)b"

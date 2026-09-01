@@ -7,7 +7,7 @@ tags:
   - v1.5.0
 image: "./assets/callouts-component.png"
 authors:
-  - enscribe
+  - eajt
 ---
 
 ## Our (hesitantly) first content-based component
@@ -180,7 +180,7 @@ description: 'A quick update introduces our first content-based component: the c
 date: 2025-04-24
 tags: ['v1.5.0']
 image: './1200x630.png'
-authors: ['enscribe']
+authors: ['ajt']
 ---
 
 import Callout from '@/components/callout.astro'
