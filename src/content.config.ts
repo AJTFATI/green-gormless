@@ -7,14 +7,15 @@ const authors = defineCollection({
     pattern: "**/[^_]*.md",
     base: "./src/content/authors",
   }),
-  schema: z.object({
-    name: z.string(),
-    pronouns: z.string().optional(),
-    avatar: z.url().or(z.string().startsWith("/")),
-    bio: z.string().optional(),
-    mail: z.email().optional(),
-    socials: z.record(z.string(), z.url()).optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      pronouns: z.string().optional(),
+      avatar: image(),
+      bio: z.string().optional(),
+      mail: z.email().optional(),
+      socials: z.record(z.string(), z.url()).optional(),
+    }),
 })
 
 const blog = defineCollection({
