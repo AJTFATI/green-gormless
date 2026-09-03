@@ -14,14 +14,10 @@ import { SITE, SOCIALS } from "@/consts"
 <style>
   footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin-block: var(--space-xs) var(--page-offset-bottom);
-
-    @media (width >= 40rem) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
 
     p {
       font-size: var(--step--1);
