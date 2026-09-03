@@ -5,6 +5,7 @@ import Globe from "@/assets/icons/globe.svg"
 import Instagram from "@/assets/icons/instagram.svg"
 import Link from "@/assets/icons/link.svg"
 import SocialIcons from "@/components/SocialIcons.astro"
+import { Image } from "astro:assets"
 import { normalizePath } from "@/lib/utils"
 import type { SvgComponent } from "astro/types"
 import type { CollectionEntry } from "astro:content"
@@ -33,18 +34,15 @@ const isCurrent = normalizePath(Astro.url.pathname) === href
 ---
 
 <li>
-  {isCurrent ? (
-      <img src={avatar} alt={name} width="64" height="64" />
-    ) : (
-      <a href={href} tabindex="-1" aria-hidden="true">
-        <img src={avatar} alt="" width="64" height="64" />
-      </a>
-    )}
+{isCurrent ? (
+    <Image src={avatar} alt={name} width={64} height={64} />
+  ) : (
+    <a href={href} tabindex="-1" aria-hidden="true">
+      <Image src={avatar} alt="" width={64} height={64} />
+    </a>
+  )}
   <author-info>
-    {bio && <p>{bio}</p>}
-    {links.length > 0 && <SocialIcons links={links} />}
-  </author-info>
-</li>
+    ...
 
 <style>
   li {
