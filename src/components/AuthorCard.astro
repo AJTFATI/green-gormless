@@ -34,7 +34,7 @@ const isCurrent = normalizePath(Astro.url.pathname) === href
 ---
 
 <li>
-{isCurrent ? (
+  {isCurrent ? (
     <Image src={avatar} alt={name} width={64} height={64} />
   ) : (
     <a href={href} tabindex="-1" aria-hidden="true">
@@ -42,7 +42,10 @@ const isCurrent = normalizePath(Astro.url.pathname) === href
     </a>
   )}
   <author-info>
-    ...
+    {bio && <p>{bio}</p>}
+    {links.length > 0 && <SocialIcons links={links} />}
+  </author-info>
+</li>
 
 <style>
   li {
