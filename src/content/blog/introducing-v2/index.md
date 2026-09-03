@@ -4,7 +4,7 @@ description: "I've rebuilt my blogging template from scratch, and it's better in
 date: 2026-06-06
 authors:
   - ajt
-image: ./assets/banner.png
+image: /src/content/pics/02-KobeSanPedro.jpg
 tags:
   - v2
 ---

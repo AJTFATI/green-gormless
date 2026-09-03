@@ -41,10 +41,6 @@ const isCurrent = normalizePath(Astro.url.pathname) === href
       </a>
     )}
   <author-info>
-    <author-name>
-      {isCurrent ? name : <a href={href}>{name}</a>}
-      {pronouns && <author-pronouns>{pronouns}</author-pronouns>}
-    </author-name>
     {bio && <p>{bio}</p>}
     {links.length > 0 && <SocialIcons links={links} />}
   </author-info>
