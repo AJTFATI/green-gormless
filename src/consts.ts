@@ -8,8 +8,8 @@ export const SITE = {
   description: "portfolio for alexander j. taylor.",
   locale: "en-US",
   dir: "ltr",
-  defaultPageImage: "/static/opengraph-image.png",
-  defaultPostImage: "/static/1200x630.png",
+  defaultPageImage: "/src/content/authors/Headshot-AlexanderJTaylor.jpeg",
+  defaultPostImage: "/src/content/authors/Headshot-AlexanderJTaylor.jpeg",
 } as const
 
 export const NAVIGATION = [

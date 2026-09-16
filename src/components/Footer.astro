@@ -6,7 +6,7 @@ import { SITE, SOCIALS } from "@/consts"
 <footer>
   <p>
     &copy; {new Date().getFullYear()}
-    {SITE.title}
+  
   </p>
   <SocialIcons links={SOCIALS} />
 </footer>
@@ -17,11 +17,5 @@ import { SITE, SOCIALS } from "@/consts"
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-block: var(--space-xs) var(--page-offset-bottom);
-
-    p {
-      font-size: var(--step--1);
-      color: var(--muted-foreground);
-    }
   }
 </style>
