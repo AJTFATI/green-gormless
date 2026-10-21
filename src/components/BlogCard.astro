@@ -44,9 +44,10 @@ const authors = await getEntries(post.data.authors)
       inline-size: 14rem;
 
       :global(img) {
-        inline-size: 100%;
-        block-size: auto;
-      }
+  inline-size: 100%;
+  block-size: 10rem;
+  object-fit: contain;
+}
     }
 
     entry-info {
